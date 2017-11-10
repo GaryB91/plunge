@@ -1,7 +1,8 @@
 User stories
----------------
+------------
 
 As an event organiser, I want to:
+=================================
 
 * take entries within my website, so that my website is considered a one-stop-shop for my event
 
@@ -15,6 +16,7 @@ As an event organiser, I want to:
 
 
 As an entrant, I want to:
+=========================
 
 * create an account, so my personal details are saved for future use
 
@@ -37,7 +39,3 @@ As an entrant, I want to:
 * review my collection of entries before I submit it, so that I can ensure I am submitting the correct information
 
 * receive a confirmation email when my transaction is complete, so that I am certain that my entry has been received
-
-
-
-
