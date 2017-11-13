@@ -20,6 +20,8 @@ As an entrant, I want to:
 
 * create an account, so my personal details are saved for future use
 
+* be able to reset my password, so I can use an account that I have previously set up
+
 * sign in with an existing account, so that I can use my saved personal details
 
 * see the steps that I need to carry out to create an entry, so that I understand the whole process
@@ -31,6 +33,8 @@ As an entrant, I want to:
 * see how far along the entry process I am, so that I can monitor my progress
 
 * create an entry for more than one person, so that I can enter my friends and family at the same time as myself
+
+* edit any entry for any person that I have on my order, so that I can correct or amend details
 
 * be able to partially complete entry, so that I do not have to complete it all in one go
 
