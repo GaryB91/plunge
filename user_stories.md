@@ -8,7 +8,7 @@ As an event organiser, I want to:
 
 * collect contact details about multiple entrants, so that I can contact them prior the event
 
-* collect personal informatiom about each entrant, so that I can collect demographic information
+* collect personal information about each entrant, so that I can collect demographic information
 
 * show all the event tickets that are available, so that entrants can choose the right ticket for them
 
@@ -30,7 +30,7 @@ As an entrant, I want to:
 
 * see how far along the entry process I am with ease, so that I can monitor my progress
 
-* move through the entry process as quickly as possible, copying data on steps where possible and relevant
+* move through the entry process as quickly as possible, copying data on steps where possible and relevant either from pre-completed participants or the user account
 
 * create an entry for more than one person, so that I can enter my friends and family at the same time as myself
 
