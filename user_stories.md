@@ -6,23 +6,21 @@ As an event organiser, I want to:
 
 * take entries within my website, so that my website is considered a one-stop-shop for my event
 
-* collect contact details about entrants, so that I can contact them prior the event
+* collect contact details about multiple entrants, so that I can contact them prior the event
 
-* collect personal informatiom about entrants, so that I can collect demographic information
+* collect personal informatiom about each entrant, so that I can collect demographic information
 
-* ask entrants event related questions, so that I can collect essential event-related informatiom
-
-* show all the event tickets that are available, so that entrants can choose the right tickt for them
+* show all the event tickets that are available, so that entrants can choose the right ticket for them
 
 
 As an entrant, I want to:
 =========================
 
-* create an account, so my personal details are saved for future use
+* create an account, so my personal details are saved for future use and my registration history is saved
 
 * be able to reset my password, so I can use an account that I have previously set up
 
-* sign in with an existing account, so that I can use my saved personal details
+* sign in with an existing account, so that I can use my saved personal details/account
 
 * see the steps that I need to carry out to create an entry, so that I understand the whole process
 
@@ -30,7 +28,9 @@ As an entrant, I want to:
 
 * be told when I have omitted information from my entry, so that I can provide complete information
 
-* see how far along the entry process I am, so that I can monitor my progress
+* see how far along the entry process I am with ease, so that I can monitor my progress
+
+* move through the entry process as quickly as possible, copying data on steps where possible and relevant
 
 * create an entry for more than one person, so that I can enter my friends and family at the same time as myself
 
@@ -43,3 +43,4 @@ As an entrant, I want to:
 * review my collection of entries before I submit it, so that I can ensure I am submitting the correct information
 
 * receive a confirmation email when my transaction is complete, so that I am certain that my entry has been received
+
