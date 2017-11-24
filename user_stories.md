@@ -36,6 +36,8 @@ As an entrant, I want to:
 
 * edit any entry for any person that I have on my order, so that I can correct or amend details
 
+* ability to delete/remove any information/profile i have either partially or fully completed before final processing
+
 * be able to partially complete entry, so that I do not have to complete it all in one go
 
 * be able to resume my partially complete entry, so that I do not have to re-enter information I previously entered
