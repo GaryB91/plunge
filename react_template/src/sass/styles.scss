@@ -1,0 +1,9 @@
+
+// -------------------------------------------------------------------------------------------
+// Sass relating to the component is in a file per component, and the files are then compiled.
+// This is the master file which imports everything. 
+// -------------------------------------------------------------------------------------------
+
+@import 'header';
+@import 'bar';
+@import 'bar';
