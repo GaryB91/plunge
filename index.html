@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="react_template/static/css/styles.css">
+</head>
+<body>
+
+  <!-- 1. show this before the user has logged in or signed up - everyone sees this step -->
+  <div class="login-signup">
+    
+    <!-- 1a. the buttons to let them choose what to do first -->
+    <section class="buttons">
+        <button class="button">Login</button>
+        <button class="buttone">Sign up</button>
+    </section>
+    <!-- /1a. -->
+    
+    <!-- 1b. the login form - shown when they click login -->
+    <section class="form">
+        <div class="message message--error">
+          this is a validation message or a generic problem
+        </div>
+        <div class="form-row">
+          <label>Email</label>
+          <input type="text" required />
+        </div>
+        <div class="form-row">
+          <label>Password</label>
+          <input type="password" required />
+        </div>
+        <div class="form-row">
+          <button class="button u-pull-right">login</button>
+        </div>
+    </section>
+    <!-- /1b. -->
+
+    <!-- 1c. the sign up form, shown when they click sign up -->
+    <section class="form">
+        <div class="message message--error">
+          this is a validation message or a generic problem
+        </div>
+        <div class="form-row">
+          <label>First name</label>
+          <input type="text" required />
+        </div>
+        <div class="form-row">
+          <label>Last name</label>
+          <input type="text" required />
+        </div>
+        <div class="form-row">
+          <label>Email</label>
+          <input type="text" required />
+        </div>
+        <div class="form-row">
+          <label>Password</label>
+          <input type="password" required />
+        </div>
+        <div class="form-row">
+          <button class="button u-pull-right">Sign up</button>
+        </div>
+    </section>
+    <!-- /1c. -->
+  </div>
+  <!-- /1. -->
+
+
+
+
+
+  <!-- 2. once the user is logged in, show the logged-in view -->
+  <!-- 2a. If a user is brand new, show them the tiles with the profile tile being the first -->
+  <!-- 2b. If a user is an existing user, show a summary of what they were doing last time -->
+  <div class="logged-in">
+    <header>
+      
+      <!-- this people section needs to be present, even if there are no people in it. Am assuming that one person will always be present, even if the person is only entering themselves. For the icon, we can use the initials of the name they used when they first signed up. If they already have an account, their name will be already stored -->
+      <section class="people">
+        <div class="person">
+          AB
+        </div>
+        <div class="person">
+          CD
+        </div>
+        <div class="person">
+          EF
+        </div>   
+      </section>
+      <!-- this icon is always present, even when there is an empty basket - maybe show an indicator of the amount of items in the basket / cost of items in the basket? --> 
+      <section class="basket">
+        <div class="basket-icon">basket</div>
+      </section>
+    </header>
+
+    
+    <div class="view">
+
+      <!-- 2a. If a user is brand new, show them the tiles with the profile tile being the first -->
+      <section class="dashboard">
+        <section class="actions">
+          <button class="button deleteAction u-pull-right">delete</button>
+        </section>
+      
+        <section class="tiles">
+
+          <div class="tile selected">
+            <h2 class="heading">Profile</h2>
+            <div class="form">
+              <div class="form-row">
+                <label>Field 1</label>
+                <input type="text" required />
+              </div>
+              <div class="form-row">
+                <label>Field 2</label>
+                <input type="text" required />
+              </div>
+              <div class="form-row">
+                <label>Field 3</label>
+                <input type="text" required />
+              </div>
+              <div class="form-row">
+                <label>Field 4</label>
+                <input type="text" required />
+              </div>
+              <div class="form-row">
+                <label>Field 5</label>
+                <input type="text" required />
+              </div>
+              <div class="form-row">
+                <label>Field 6</label>
+                <input type="text" required />
+              </div>
+              <div class="form-row">
+                <button class="button">Cancel</button>
+                <button class="button u-pull-right">Next</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="tile next">
+            <h2 class="heading">Registration type</h2>
+            <div class="reg-type">
+              <ul class="form">
+                <div class="form-row">
+                  <a href="#">reg type 1</a>
+                </div>
+                <div class="form-row">
+                  <a href="#">reg type 2</a>
+                </div>
+                <div class="form-row">
+                  <a href="#">reg type 1</a>
+                </div>
+                <div class="form-row">
+                  <button class="button">Prev</button>
+                  <button class="button u-pull-right">Next</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="tile nextRightSecond">
+            <h2 class="heading">what next</h2>
+            <section class="buttons">
+                <button class="button">Go to basket / checkout</button>
+                <button class="button">Add someone else</button>
+            </section>
+          </div>
+
+        </section>          
+      </section>
+      <!-- /2a. -->
+
+
+    </div>
+    
+  </div>
+  <!-- /2. -->
+
+</body>
+</html>
