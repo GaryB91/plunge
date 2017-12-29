@@ -4,6 +4,6 @@
 // This is the master file which imports everything. 
 // -------------------------------------------------------------------------------------------
 
-@import 'header';
-@import 'bar';
-@import 'bar';
+@import './components/bar.scss',
+		'./components/basket.scss',
+		'./components/header.scss';
