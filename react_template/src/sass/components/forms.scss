@@ -1,0 +1,45 @@
+
+// ------------------------------------------------------------------------------------
+// forms and the elements which are contained within them
+// ------------------------------------------------------------------------------------
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem
+}
+
+.form button {
+  align-self: flex-end;
+}
+
+.form-row + .form-row {
+  margin-top: 1rem
+}
+
+label {
+  display: block;
+  color: #777;
+  margin-bottom: .25rem
+}
+
+input {
+  padding: .5rem;
+  font-size: 1rem;
+  color: #777;
+  width: 100%;
+  border: 1px solid $grey-light;
+  border-radius: 3px;
+}
+
+input:focus {
+  outline:  2px solid $grey-light
+}
+
+/*input:invalid {
+  border-color: red
+}
+
+input:valid {
+  border-color: $grey-light
+}*/

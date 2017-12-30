@@ -1,0 +1,29 @@
+
+// ------------------------------------------------------------------------------------
+// headings at the top of the tiles
+// ------------------------------------------------------------------------------------
+
+.people {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.person {
+  padding: 1rem;
+    background: grey;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity .15s linear
+}
+
+
+.person:hover {
+  opacity: .7
+}
+
+.person + .person {
+  margin-left: 1rem
+}
