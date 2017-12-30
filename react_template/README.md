@@ -3,11 +3,11 @@ React boilerplate code
 
 This is a very simple app demonstrating a few skills which include:
 
-- setting up a simple [express.js][https://expressjs.com/] webserver
-- using configuring and using [nunjucks templates][https://mozilla.github.io/nunjucks/]
-- setting up a [webpack][https://webpack.js.org/] build pipeline
-- building and rendering a [react][https://reactjs.org/] component, built using [es2015][https://babeljs.io/learn-es2015/] syntax
-- general [node.js][https://nodejs.org/en/] app setup
+- setting up a simple [express.js](https://expressjs.com/) webserver
+- using configuring and using [nunjucks templates](https://mozilla.github.io/nunjucks/)
+- setting up a [webpack](https://webpack.js.org/) build pipeline
+- building and rendering a [react](https://reactjs.org/) component, built using [es2015](https://babeljs.io/learn-es2015/) syntax
+- general [node.js](https://nodejs.org/en/) app setup
 
 The project is broken down into the following files:
 
@@ -16,7 +16,7 @@ package.json
 This is the confinguration file for this node app. In here you will find a number of useful insights to the project, as well as some extras to do a little bit of the heavy lifting while working on your node app. The most important parts of this file at this point are the sections:
 
 - `main` - indicates the primary file to run when launching this node app.
-- `scripts` - details a number of handy scripts you can run from the command line throught the use of npm. These are run by calling `npm run <script-name>` for example `npm run dev-build`.
+- `scripts` - details a number of handy scripts you can run from the command line throught the use of npm. These are run by calling `npm run [script-name]` for example `npm run dev-build`.
 - `dependencies` - files required for the local building and packaging of your app on your machine
 - `devDependencies` - the requirements to run the app when it is deployed and live.
 
@@ -28,7 +28,7 @@ This is the entry point for the express server. This file is run to initialise t
 
 index.njk
 ---------
-This is our nunjucks html template. Nunjucks is a templating language for Javascript which borrows from Djangos templating language and it's derivative e.g. jinja. At this point however it is simply being used as a standard piece of html... and not a very interesting one at that. At this point beyond the usual html crufts, there is a `<script>` tag which includes our app.js file (in the next section we will see how `app.js` is created)r, and a `<div id="app">`, which our app should launch into.
+This is our nunjucks html template. Nunjucks is a templating language for Javascript which borrows from Djangos templating language and it's derivative e.g. jinja. At this point however it is simply being used as a standard piece of html... and not a very interesting one at that. As well as the usual html crufts, there is a `<script>` tag which includes our `app.js` file (in the next section we will see how `app.js` is created), and a `<div id="app">`, which our app should launch into.
 
 webpack.config.js
 -----------------
@@ -38,21 +38,23 @@ Webpack is an asset bundling tool used (in our case) to nicely package up raw sc
 
 In the file, you will see the place that we want webpack to begin processing the files in the `entry` section - this is the entry point for webpack. Webpack can begin at multiple entry points. You will see that there are two:
 
-- `JS_APP_DIR`
-- `CSS_APP_DIR`
+- `JS_APP_DIR + "/app.jsx"`
+- `CSS_APP_DIR + "/styles.scss"`
 
 We also define the destination of the files, and this is done with:
 
 - `JS_BUILD_DIR`
 - `CSS_BUILD_DIR`
 
-Within the app directory we have specified that the initial file the packager needs to hunt for is the `app.jsx` file - this is our entry/launch file. 
+Within the app directory we have specified that the initial file the webpack needs to hunt for is the `app.jsx` file - this is our entry/launch file. 
 
-We have also specified that this should all be bundled into an `app.js` file in our build directory. Which again, you may have noticed, is what we reference in the `index.njk` file within the script tags. 
+We have also specified that this should all be bundled into an `app.js` file in our build directory. Which again, you may have noticed, is what we reference in the `index.njk` file within the `<script>` tags. 
 
-Running `npm run dev-build` will run and produce an un-minified version of our app while running `npm run prod-build` will produce and ugly old minified file. These be run by invoking webpack directly and is seen in the package.json file by calling `webpack -d` and `webpack -p` respectively, but for neatness and reduction of that all important commodity, brain space, putting these in the npm scripts under handy names simplifies things. You may at this stage require to run `npm run dev-build` at least if you do not have the `static/js/app.js` file in your project.
+Running `npm run dev-build` will run and produce an un-minified version of our app. Running `npm run prod-build` will produce an ugly old minified file. These commands can also be run by invoking webpack directly. Refer to `package.json` and look for the `scripts`  section. You will see that calling `webpack -d` and `webpack -p` will run `npm run dev-build` and `npm run prod-build` respectively.  For neatness and reduction of that all-important commodity, brain space, putting these in the npm scripts under handy names simplifies things. 
 
 If you want webpack to watch your files, pass `--watch` to your command, like so `webpack -d --watch`
+
+You may at this stage require to run `npm run dev-build` at least if you do not have the `static/js/app.js` file in your project.
 
 .babelrc
 --------
