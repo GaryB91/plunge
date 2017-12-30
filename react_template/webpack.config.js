@@ -38,11 +38,11 @@ var config = {
         ]
     },
     plugins: [
-    new ExtractTextPlugin({ // define where to save the file
-        filename: "../css/styles.bundle.css",
-        allChunks: true,
-    }),
-  ]
+        new ExtractTextPlugin({ // define where to save the file
+            filename: "../css/styles.bundle.css",
+            allChunks: true,
+        }),
+    ]
 };
 
 module.exports = config;
