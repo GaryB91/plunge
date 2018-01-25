@@ -5,6 +5,16 @@
 // ------------------------------------------------------------------------------------
 
 .basket {
-	outline: 1px solid;
+	
 	cursor: pointer;
+	display: flex;
+
+	&-icon {
+		width: 2rem
+	}
+
+	&-amount {
+		outline: 1px solid red;
+	}
+
 }

@@ -8,25 +8,18 @@
 
 @import './utils/reset.scss';
 
-@import './components/actions.scss',
-		'./components/bar.scss',
+@import './components/bar.scss',
 		'./components/basket.scss',
 		'./components/button.scss',
 		'./components/forms.scss',
 		'./components/header.scss',
 		'./components/heading.scss',
+		'./components/links.scss',
+		'./components/logo.scss',
+		'./components/login-signup.scss',
 		'./components/message.scss',
 		'./components/people.scss',
 		'./components/tiles.scss';
 
 // ensure that this is imported last of all
 @import './utils/utility-classes.scss';
-
-
-.login-signup {
-	outline: 2px solid green;
-}
-
-.logged-in {
-	outline: 1px solid blue
-}

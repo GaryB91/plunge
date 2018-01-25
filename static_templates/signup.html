@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="../react_template/static/css/styles.bundle.css">
+</head>
+<body>
+
+    <header>
+      <section class="logo">
+        <a href="login-or-signup.html"><img class="logo" src="../react_template/static/svg/logo.svg"></a> 
+      </section>
+    </header>
+
+    <!-- 1c. the sign up form, shown when they click sign up -->
+    <section class="form">
+        <div class="message message--error">
+          this is a validation message or a generic problem
+        </div>
+        <div class="form-row">
+          <label>First name</label>
+          <input type="text" required />
+        </div>
+        <div class="form-row">
+          <label>Last name</label>
+          <input type="text" required />
+        </div>
+        <div class="form-row">
+          <label>Email</label>
+          <input type="text" required />
+        </div>
+        <div class="form-row">
+          <label>Password</label>
+          <input type="password" required />
+        </div>
+        <div class="form-row">
+          <button class="button u-pull-right" onclick="location.href = 'dashboard.html'">Sign up</button>
+          <a class="link u-pull-left" href="login.html">log in instead</a>
+        </div>
+    </section>
+    <!-- /1c. -->
+
+</body>
+</html>

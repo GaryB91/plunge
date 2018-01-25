@@ -5,6 +5,7 @@
 
 html {
   box-sizing: border-box;
+  height: 100%
 }
 
 *, 
@@ -18,5 +19,6 @@ body {
 	margin: 0;
 	box-sizing: inherit;
 	font-size: 1em;
-	font-family: Helvetica, sans-serif
+	font-family: Helvetica, sans-serif;
+	height: 100%
 }

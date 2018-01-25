@@ -1,14 +1,9 @@
 
 // ------------------------------------------------------------------------------------
-// Where the actions for each entry sit
+// links
 // ------------------------------------------------------------------------------------
 
-.actions {
-	padding: 1rem .5rem;
-}
-
-.actions:after {
-	display: table;
-	clear: both;
-	content: '';
+.link {
+  text-decoration: none;
+  color: #0f58ea
 }
