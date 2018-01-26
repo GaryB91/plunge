@@ -4,6 +4,17 @@
 // that an entry has been added
 // ------------------------------------------------------------------------------------
 
-.bar {
-  display: flex
+.basket {
+	
+	cursor: pointer;
+	display: flex;
+
+	&-icon {
+		width: 2rem
+	}
+
+	&-amount {
+		outline: 1px solid red;
+	}
+
 }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="../react_template/static/css/styles.bundle.css">
+</head>
+<body>
+
+    <header>
+      <a href="login-or-signup.html"><img class="logo" src="../react_template/static/svg/logo.svg"></a>
+      
+      <!-- this people section needs to be present, even if there are no people in it. Am assuming that one person will always be present, even if the person is only entering themselves. For the icon, we can use the initials of the name they used when they first signed up. If they already have an account, their name will be already stored -->
+      <section class="people">
+        <div class="person">
+          AB
+        </div>  
+      </section>
+      <!-- this icon is always present, even when there is an empty basket - maybe show an indicator of the amount of items in the basket / cost of items in the basket? --> 
+      <section class="basket">
+        <div class="basket-icon">
+          <img src="../react_template/static/svg/basket.svg" />
+          <span>£0.00</span>
+        </div>
+      </section>
+    </header>
+
+    <section class="page profile">
+      <h2 class="heading">Profile</h2>
+      <div class="form">
+        <div class="form-row">
+          <label>Field 1</label>
+          <input type="text" required />
+        </div>
+        <div class="form-row">
+          <label>Field 2</label>
+          <input type="text" required />
+        </div>
+        <div class="form-row">
+          <label>Field 3</label>
+          <input type="text" required />
+        </div>
+        <div class="form-row">
+          <label>Field 4</label>
+          <input type="text" required />
+        </div>
+        <div class="form-row">
+          <label>Field 5</label>
+          <input type="text" required />
+        </div>
+        <div class="form-row">
+          <label>Field 6</label>
+          <input type="text" required />
+        </div>
+        <div class="form-row">
+          <button class="button" onclick="location.href = 'dashboard.html'">Cancel</button>
+          <button class="button u-pull-right" onclick="location.href = 'dashboard.html'">Save</button>
+        </div>
+      </div>
+    </section>
+
+</body>
+</html>

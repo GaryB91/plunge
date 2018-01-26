@@ -1,0 +1,15 @@
+
+// ------------------------------------------------------------------------------------
+// this appears at the top of the widget, and can contain other components
+// ------------------------------------------------------------------------------------
+
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: .5rem;
+	border-bottom: 1px solid $grey-light
+}
+
+header > * {
+	
+}

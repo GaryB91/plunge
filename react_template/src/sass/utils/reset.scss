@@ -1,0 +1,24 @@
+// ------------------------------------------------------------------------------------
+// Reset - applies globally, to the html and the body
+// ------------------------------------------------------------------------------------
+
+
+html {
+  box-sizing: border-box;
+  height: 100%
+}
+
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+
+body {
+	margin: 0;
+	box-sizing: inherit;
+	font-size: 1em;
+	font-family: Helvetica, sans-serif;
+	height: 100%
+}

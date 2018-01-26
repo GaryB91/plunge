@@ -4,6 +4,22 @@
 // This is the master file which imports everything. 
 // -------------------------------------------------------------------------------------------
 
-@import 'header';
-@import 'bar';
-@import 'bar';
+@import './utils/variables.scss';
+
+@import './utils/reset.scss';
+
+@import './components/bar.scss',
+		'./components/basket.scss',
+		'./components/button.scss',
+		'./components/forms.scss',
+		'./components/header.scss',
+		'./components/heading.scss',
+		'./components/links.scss',
+		'./components/logo.scss',
+		'./components/login-signup.scss',
+		'./components/message.scss',
+		'./components/people.scss',
+		'./components/tiles.scss';
+
+// ensure that this is imported last of all
+@import './utils/utility-classes.scss';

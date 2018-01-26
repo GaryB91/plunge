@@ -1,0 +1,32 @@
+
+// ------------------------------------------------------------------------------------
+// Messages above forms
+// ------------------------------------------------------------------------------------
+
+.message {
+	padding: .5rem;
+	text-align: center;
+	margin-bottom: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.message--error {
+	background: #ffe8ec;
+	color: #ce1e1e;
+}
+
+.message--error:before {
+	content: '!';
+    display: block;
+    margin-right: .5rem;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 700;
+    min-width: 1.5rem;
+    height: 1.5rem;
+    background: #ce1e1e;
+    color: white;
+    border-radius: 50%;
+}
