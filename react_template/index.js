@@ -14,7 +14,7 @@ nunjucks.configure({
 
 app.set("view engine", "njk");
 
-app.get("/", (req, res)=> {
+app.get("/", (req, res) => {
     return res.render("index");
 });
 
