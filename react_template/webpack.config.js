@@ -1,5 +1,6 @@
 const webpack = require("webpack"),
     ExtractTextPlugin = require('extract-text-webpack-plugin'),
+    CopyWebpackPlugin = require('copy-webpack-plugin'),
     path = require("path"),
     JS_BUILD_DIR = path.resolve(__dirname, "static/js"),
     JS_APP_DIR = path.resolve(__dirname, "src/js"),
@@ -38,10 +39,17 @@ var config = {
         ]
     },
     plugins: [
+        
         new ExtractTextPlugin({ // define where to save the file
             filename: "../css/styles.bundle.css",
             allChunks: true,
         }),
+
+        new CopyWebpackPlugin([{
+                from: '../react_template/src/img',
+                to: '../img'
+            } 
+        ]), 
     ]
 };
 
